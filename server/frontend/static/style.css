@@ -1,7 +1,3 @@
-img{
-  width: 60%;
-  align-self: center;
-}
 
 .card{
   border: rgb(103, 102, 105) 3px solid;
@@ -11,6 +7,21 @@ img{
   margin-right:5%;
   margin-top: 1%;
   margin-bottom: 1%;
+  max-height: 300px;
+}
+
+.card .card-body .card-position{
+    font-weight:        700;
+    font-size:          23px;
+}
+
+.card .card-body >p{
+    text-align:         center;
+}
+
+.card-img-top{
+    width:              100%;
+    height:             100%;
 }
 
 .row{
@@ -123,4 +134,34 @@ img{
     border-radius:50px;
     text-align:center;
     box-shadow: 2px 2px 3px #999;  
+}
+
+.contact-us-container {
+    box-shadow: -2px 4px 18px 2px rgba(0,0,0,0.61);
+    -webkit-box-shadow: -2px 4px 18px 2px rgba(0,0,0,0.61);
+    -moz-box-shadow: -2px 4px 18px 2px rgba(0,0,0,0.61);
+    padding: 50px 50px 50px 50px;
+}
+
+.contact-us-container .contact-header{
+    margin-bottom: 50px;
+}
+
+.contact-us-container .contact-options{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    flex: 1 0 0;
+}
+
+.contact-us-container .contact-options .option{
+    flex: 1 0 0;
+}
+
+.contact-us-container .contact-options .option .opt-title{
+    font-weight: 700;
+}
+
+.contact-us-container .contact-options .option .opt-content{
+    font-weight: 400;
 }
