@@ -16,7 +16,6 @@ def get_request(endpoint, **kwargs):
     if(kwargs):
         for key,value in kwargs.items():
             params=params+key+"="+value+"&"
-
     request_url = backend_url+endpoint+"?"+params
 
     print("GET from {} ".format(request_url))
@@ -29,7 +28,7 @@ def get_request(endpoint, **kwargs):
         print("Network exception occurred")
 
 def analyze_review_sentiments(text):
-    request_url = sentiment_analyzer_url+"analyze/"+text
+    request_url = sentiment_analyzer_url+"/analyze/"+text
     try:
         # Call get method of requests library with URL and parameters
         response = requests.get(request_url)

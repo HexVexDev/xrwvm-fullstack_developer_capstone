@@ -20,6 +20,8 @@ class CarMake(models.Model):
     
     def __str__(self):
         return self.name
+    class Meta:
+        db_table = 'carmake'
 
 class CarModel(models.Model):
     CAR_TYPES = [
@@ -37,6 +39,9 @@ class CarModel(models.Model):
     
     def __str__(self):
         return f"{self.make.name} - {self.name}"
+
+    class Meta:
+        db_table = 'carmodel'
 
 # <HINT> Create a Car Model model `class CarModel(models.Model):`:
 # - Many-To-One relationship to Car Make model (One Car Make has many
